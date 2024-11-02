@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка файла</title>
+</head>
+<body>
+    <h1>Загрузка файла на сервер</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file_name">С каким именем сохранить файл на сервере:</label>
+        <input type="text" id="file_name" name="file_name" required>
+        <br><br>
+        
+        <label for="content">Выберите файл:</label>
+        <input type="file" id="content" name="content" required>
+        <br><br>
+        
+        <input type="submit" value="Загрузить">
+    </form>
+</body>
+</html>
